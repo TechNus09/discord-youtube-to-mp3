@@ -1,4 +1,5 @@
 //Modules
+const TOKEN = process.env.TOKEN
 const ScrapeYt = require("scrape-yt");
 const spotify = require("spotify-url-info")
 const Discord = require("discord.js");
@@ -68,4 +69,4 @@ Client.on("message", async message => {
 });
 
 //Client login
-Client.login(Config.token);
+Client.login(TOKEN);
